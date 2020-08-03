@@ -43,11 +43,11 @@ public class DeckServiceImpl implements DeckService {
     public void initialize(Deck deck) {
         deck.getRemainingCards().clear();
         deck.getDiscardedCards().clear();
-        for (Value element : DECK_VALUES) {
-            deck.getRemainingCards().add(new Card(Suit.CLUB, element));
-            deck.getRemainingCards().add(new Card(Suit.HEART, element));
-            deck.getRemainingCards().add(new Card(Suit.SPADE, element));
-            deck.getRemainingCards().add(new Card(Suit.DIAMOND, element));
+        for (Value value : DECK_VALUES) {
+            deck.getRemainingCards().add(new Card(Suit.CLUB, value));
+            deck.getRemainingCards().add(new Card(Suit.HEART, value));
+            deck.getRemainingCards().add(new Card(Suit.SPADE, value));
+            deck.getRemainingCards().add(new Card(Suit.DIAMOND, value));
         }
     }
 
